@@ -1,0 +1,88 @@
+.Cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.Cards1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+    height: 420px;
+    background-color: #ededed;
+    border-radius: 10px;
+    font-family: 'Roboto';
+    margin: 10px;
+    box-shadow:-7px 7px 10px #f4f2f2 ; 
+}
+
+.Cards1:hover{
+    width: 360px;
+    height: 450px;
+    background-color: #ededed;
+    border-radius: 10px;
+    font-family: 'Roboto';
+    box-shadow:-7px 7px 10px #c6c5c5 ; 
+}
+
+h1 {
+    margin-left: 7px;
+}
+
+p {
+    font-weight: 450;
+    color: #a8a4a4;
+    margin-left: 7px;
+}
+
+.Pic1 {
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.Butt {
+    background-color: #0BA5EC;
+    color: #fff;
+    border-radius: 10px;
+    width: 44px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Roboto';
+}
+
+.Button {
+    margin-right: 160px;
+    margin-top: 20px;
+}
+
+
+
+@media (max-width: 768px) {
+    .Cards {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .Cards1 {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .Button {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .Cards1 {
+        width: 90%; 
+    }
+
+    .Button {
+        margin-top: 10px;
+    }
+}
+
